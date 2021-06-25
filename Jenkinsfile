@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("clone git code"){
             steps{
-                git branch: 'master', credentialsId: 'git_credentials', url: 'https://github.com/kkarun-ges/sample-java-app.git'
+                git branch: 'stage', credentialsId: 'git_credentials', url: 'https://github.com/kkarun-ges/sample-java-app.git'
             }
         }
         stage("build code"){
